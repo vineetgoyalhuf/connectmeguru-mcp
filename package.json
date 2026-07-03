@@ -1,0 +1,21 @@
+{
+  "name": "connectmeguru-mcp",
+  "version": "1.0.0",
+  "description": "Standalone Model Context Protocol (MCP) Server for ConnectMeGuru",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
