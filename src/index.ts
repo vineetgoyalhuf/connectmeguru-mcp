@@ -437,7 +437,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`,
         },
-        body: JSON.stringify({ packageCode, discountCode }),
+        body: JSON.stringify({ packageCode, discountCode, source: "claude" }),
       });
       const data: any = await res.json();
 
@@ -538,7 +538,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`,
         },
-        body: JSON.stringify({ packageCode }),
+        body: JSON.stringify({ packageCode, source: "claude" }),
       });
       const data: any = await res.json();
       if (!res.ok || data.error) {
